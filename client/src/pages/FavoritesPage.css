@@ -1,0 +1,122 @@
+.the-favorites-container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 7rem;
+  align-items: center;
+  padding-bottom: 12rem;
+  background: linear-gradient(#892afd, #40c7ff);
+}
+
+.fav-results {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 20px 0;
+  justify-content: center;
+  text-align: center;
+  padding: 5rem;
+}
+
+.fav-results > div {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.fav-results > div:hover {
+  transform: translateY(-5px);
+}
+
+@media (max-width: 1024px) {
+  .search-results {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .search-results {
+    grid-template-columns: 1fr;
+  }
+}
+
+.cover-media-item {
+  width: 8rem;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.myh2 {
+  font-size: 2.5rem;
+  color: white;
+  font-weight: 800;
+  letter-spacing: 1rem;
+}
+
+.myh3 {
+  font-size: 1.8rem;
+  background: -webkit-linear-gradient(#892afd, #40c7ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 800;
+}
+
+.song-details {
+  font-size: 1rem;
+  background: -webkit-linear-gradient(#892afd, #40c7ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 800;
+}
+
+.skip-back-button {
+  background: -webkit-linear-gradient(#fa911f, #ff1d0a, #fa00a7);
+  border: none;
+  border-radius: 10px;
+  padding: 0.5rem;
+  color: white;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.play-pause-button {
+  background: -webkit-linear-gradient(#fa911f, #ff1d0a, #fa00a7);
+  border: none;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  padding: 1rem;
+  border-radius: 10px;
+  color: white;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.skip-ahead-button {
+  background: -webkit-linear-gradient(#fa911f, #ff1d0a, #fa00a7);
+  border: none;
+  border-radius: 10px;
+  padding: 0.5rem;
+  color: white;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.remove-fav-button {
+  background: -webkit-linear-gradient(#fa911f, #ff1d0a, #fa00a7);
+  border: none;
+  border-radius: 10px;
+  padding: 0.5rem;
+  margin-top: 1rem;
+  color: white;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.favorites-results {
+  color: white;
+  font-size: 1.5rem;
+}

@@ -1,0 +1,58 @@
+.intro-container {
+  background-color: #0d0117;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+}
+
+.img-container {
+  display: flex;
+  justify-content: center;
+  margin-right: 100px;
+}
+
+.text-container {
+  padding-bottom: 7rem;
+}
+
+.intro-title {
+  font-size: 8rem;
+  letter-spacing: 2rem;
+  font-weight: 800;
+  background: -webkit-linear-gradient(#fa911f, #ff1d0a, #fa00a7);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 20px;
+}
+
+.intro-link {
+  text-decoration: none;
+}
+
+.boomBoxLogo {
+  width: auto;
+  height: 15rem;
+}
+
+.get-started-button {
+  background: -webkit-linear-gradient(#892afd, #40c7ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 2rem;
+  letter-spacing: 1rem;
+  font-weight: 800;
+  cursor: pointer;
+  border: none;
+}
+
+.intro-title:hover {
+  letter-spacing: 2.2rem;
+}
+
+.get-started-button:hover {
+  transform: scale(1.05);
+}

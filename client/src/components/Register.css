@@ -1,0 +1,74 @@
+.the-register-container {
+  background-color: #0d0117;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+}
+
+.sing-container {
+  display: flex;
+  justify-content: center;
+}
+
+.sing-img {
+  height: 11rem;
+  width: auto;
+  margin-bottom: 15rem;
+}
+
+.reg-form-container {
+  margin-right: 13rem;
+}
+
+.register-button {
+  font-size: 1.3rem;
+  margin-top: 1rem;
+  background: -webkit-linear-gradient(#fa911f, #ff1d0a, #fa00a7);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 0.5rem;
+  font-weight: 600;
+}
+
+.register:hover {
+  transform: scale(1.05);
+}
+
+.reg-input-text {
+  background-color: transparent;
+  color: white;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom-color: #ff1d0a;
+  border-bottom-width: 0.4rem;
+}
+
+.register-header {
+  font-size: 3rem;
+  background: -webkit-linear-gradient(#fa911f, #ff1d0a, #fa00a7);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 1.5rem;
+  font-weight: 800;
+  margin-left: 2rem;
+}
+
+.have-acc-tag {
+  color: #ffffff;
+}
+
+.login-link-button {
+  background: -webkit-linear-gradient(#892afd, #40c7ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 600;
+  font-size: 1rem;
+}
