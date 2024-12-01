@@ -3,6 +3,7 @@ const express = require("express"); // Express.js framework for building the ser
 const mongoose = require("mongoose"); // MongoDB object modeling tool
 const dotenv = require("dotenv"); // Environment variable management
 const cors = require("cors"); // Cross-Origin Resource Sharing (CORS) middleware
+const path = require("path"); // Add import
 
 // Initialize dotenv to load environment variables from .env file
 dotenv.config();
@@ -32,6 +33,14 @@ const favoritesRoutes = require("./routes/favorites");
 app.use("/auth", authRoutes); // Handle authentication routes
 app.use("/media", mediaRoutes); // Handle media-related routes
 app.use("/favorites", favoritesRoutes); // Handle favorites-related routes
+
+// Serve static files from the React app
+app.use(express.static(path.join(__dirname, "build")));
+
+// Handle all routes to send back the index.html for the React app
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "build", "index.html"));
+});
 
 // Connect to MongoDB using the URI from environment variables
 mongoose
